@@ -1,0 +1,81 @@
+header{
+    background-color: rgb(218, 184, 201);
+}
+.menubar{
+    background-color: rgb(226, 164, 183, .5);
+}
+
+.site-navigation{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.topic{
+    text-align: center;
+    font-family: 'Niconne', sans-serif;
+    font-size: 5rem;
+    color: rgb(117, 18, 117)
+ }
+
+.navigation {
+    transition: .5s;
+    color: rgb(108, 223, 204);
+
+}
+
+.navigation:hover {
+    font-size: x-large;
+    color: rgb(230, 20, 125);
+}
+
+.d-block {
+    width: 300px;
+    height: 700px;
+    object-fit: cover;
+}
+
+.group-section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: bisque;
+
+}
+
+.img-group{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;    
+    border: 6px solid rgb(221, 146, 171);
+}
+
+ .groupbtn{
+    text-align: center;
+    transition: 1s;
+    width: 100px;
+    background-color: lightpink;
+ }
+
+ .groupbtn:hover{
+    background-color: rgb(223, 84, 153);
+    width: 200px;
+}
+
+.nav-description{
+    padding-top: 3rem;
+    padding-left: 2rem;
+
+}
+
+.form-footer{
+    padding-top: 3rem;
+    padding-left: 2rem;
+
+}
+
