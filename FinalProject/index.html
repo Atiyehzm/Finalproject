@@ -110,7 +110,7 @@
         </div>
 
         <section class="footer-copyright">
-          <p>Copyright &copy; 2023 vanilla Kitchen. All rights reserved.</p>
+          <p>Copyright &copy; 2023 Vanilla Kitchen. All rights reserved.</p>
         </section>
 
       </footer>
@@ -122,6 +122,14 @@
       header.classList.toggle('header-color')
     }
     header.addEventListener('click', changeColor)
+
+
+    const newsLetter = document.querySelector('#newsletter')
+    function show() {
+      alert('After adding your Email, you can be updated with any news! :)')
+    }
+    newsLetter.addEventListener('click', show)
+
     </script>
 </body>
 </html>

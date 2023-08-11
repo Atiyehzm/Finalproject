@@ -1,6 +1,11 @@
 header{
     background-color: rgb(218, 184, 201);
 }
+
+.header-color{
+    background-color: aquamarine;
+}
+
 .menubar{
     background-color: rgb(226, 164, 183, .5);
 }
@@ -19,7 +24,7 @@ header{
     font-family: 'Niconne', sans-serif;
     font-size: 5rem;
     color: rgb(117, 18, 117)
- }
+}
 
 .slide{
     font-family: 'Niconne', sans-serif;
@@ -33,12 +38,12 @@ header{
     text-decoration: none;
 }
 
-.navigation:hover {
+.navigation:hover{
     font-size: x-large;
     color: rgb(230, 20, 125);
 }
 
-.d-block {
+.d-block{
     width: 300px;
     height: 700px;
     object-fit: cover;
@@ -64,6 +69,12 @@ header{
     height: 300px;
     object-fit: cover;    
     border: 6px solid rgb(221, 146, 171);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.img-group:hover{
+    border: 3px solid rgb(9, 143, 148)
 }
 
 .groupbtn{
@@ -122,8 +133,10 @@ header{
 }
 
 #massage-me{
-    /* position: fixed;
-    z-index: 2; */
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    right: 0;
     width: 200px;
     text-align: center;
     border-radius: 10px;
@@ -140,22 +153,6 @@ header{
 #massage-me:hover{
     background: #2691d9;
     width: 300px;
-}
-
-.header-color{
-    background-color: aquamarine;
-}
-
-.img-group{
-    border-radius: 20px;
-}
-
-.grid-img img{
-    transition: 0.5s all ease-in-out;
-}
-
-.grid-img:hover img{
-    transform: scale(1.5);
 }
 
 .footer-copyright{
