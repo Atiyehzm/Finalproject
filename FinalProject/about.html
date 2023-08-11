@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>about</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+    <style>
+        
+        body{
+            background-color: rgb(240, 226, 168);
+        }
+
+        h2{
+            font-size: 2rem;
+            color: rgb(153, 39, 58);
+        }
+
+        h4{
+            color: rgb(153, 39, 58);
+        }
+       
+        .menudescription{
+            padding-left: 8rem;
+            padding-top: 2rem;
+        }
+
+        header{
+            background-color: rgb(218, 184, 201);
+        }
+
+        .menubar{
+            background-color: rgb(226, 164, 183, .5);
+        }
+
+        .site-navigation{
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 2rem;
+            padding-left: 15rem;
+            padding-right: 15rem;
+        }
+
+        .topic{
+            text-align: center;
+            font-family: 'Niconne', sans-serif;
+            font-size: 5rem;
+            color: rgb(117, 18, 117)
+        }
+
+        .slide{
+            font-family: 'Niconne', sans-serif;
+            font-size: 5rem;
+            color:rgb(105, 13, 105)
+        }
+
+        .navigation a{
+            transition: .5s;
+            color: rgb(92, 11, 74);
+            text-decoration: none;
+        }
+
+        .navigation:hover {
+            font-size: x-large;
+            color: rgb(230, 20, 125);
+        }
+        
+        .header-color {
+            background-color: aquamarine;
+        }
+
+    </style>
 </head>
 <body>
+    <header>
+        <h1 id="topic" class="topic">Vanilla Kitchen</h1>
+        <section>
+            <nav class="menubar">
+                <ul id="site-navigation" class="site-navigation">
+                    <li class="home navigation"><a href="index.html">HOME</a></li>
+                    <li class="menu navigation"><a href="menu.html">MENU</a></li>
+                    <li class="order navigation"><a href="order.html">ORDER NOW</a></li>
+                    <li class="contact navigation"><a href="contact.html">CONTACT US</a></li>
+                    <li class="about navigation"><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </nav> 
+        </section>
+    </header>
+
+    <section class=menudescription>
+        <h2>About Us</h2>
+        <p>MY name is Atiyeh and I am the founder of Vanilla Kitchen. I have been making desserts<br>
+            of all kinds from cultural to something as simple and delicious as chocolate cake.<br>
+            For around 15 years now, I've been baking and experimenting with all sorts of recipes<br>
+            to find the best ones out there, but recently in 2020 I decided to create my platform to share<br>
+             my recipes to people all around the world. But you also don't have to know how to cook to taste<br>
+            these recipes. Simply scroll through my site and pick out any dessert that catches your eye,<br>
+            then with a click, you'll be able to taste something you've never had before.<br> 
+            Trust me, you won't regret your deccision.
+
+        </p>
+    </section>
+    
+    <script>
+        const header = document.querySelector('#topic')
+        function changeColor() { 
+          header.classList.toggle('header-color')
+        }
+        header.addEventListener('click', changeColor)
+    </script>
     
 </body>
 </html>
+
+
+

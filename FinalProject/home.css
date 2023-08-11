@@ -21,10 +21,16 @@ header{
     color: rgb(117, 18, 117)
  }
 
-.navigation {
-    transition: .5s;
-    color: rgb(108, 223, 204);
+.slide{
+    font-family: 'Niconne', sans-serif;
+    font-size: 5rem;
+    color:rgb(105, 13, 105)
+}
 
+.navigation a{
+    transition: .5s;
+    color: rgb(92, 11, 74);
+    text-decoration: none;
 }
 
 .navigation:hover {
@@ -45,7 +51,12 @@ header{
     padding-left: 2rem;
     padding-right: 2rem;
     background-color: bisque;
+}
 
+.grid-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .img-group{
@@ -55,27 +66,101 @@ header{
     border: 6px solid rgb(221, 146, 171);
 }
 
- .groupbtn{
+.groupbtn{
     text-align: center;
     transition: 1s;
-    width: 100px;
+    width: 150px;
     background-color: lightpink;
- }
+    height: 40px;
+    border-radius: 5px;
+}
 
- .groupbtn:hover{
+.groupbtn:hover{
     background-color: rgb(223, 84, 153);
-    width: 200px;
+    width: 300px;
 }
 
 .nav-description{
     padding-top: 3rem;
     padding-left: 2rem;
-
 }
 
 .form-footer{
     padding-top: 3rem;
     padding-left: 2rem;
-
 }
 
+#newsletter{
+    text-align: center;
+    transition: 1s;
+    width: 200px;
+    background-color: rgb(224, 183, 188);
+    height: 40px;
+    border-radius: 5px;
+}
+
+#newsletter:hover{
+    background-color: rgb(228, 132, 180);
+    width: 250px;
+}
+
+.newsbtn{
+    width: 100px;
+    background-color: rgb(150, 88, 190);
+    height: 40px;
+    border-radius: 5px;
+    animation: roll 3s infinite;
+}
+
+@keyframes roll {
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#massage-me{
+    /* position: fixed;
+    z-index: 2; */
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid rgb(11, 33, 58);
+    cursor: pointer;
+    padding: 1.5rem;
+    margin-left: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    background-color: aquamarine;
+    transition: 1s;
+}
+
+#massage-me:hover{
+    background: #2691d9;
+    width: 300px;
+}
+
+.header-color{
+    background-color: aquamarine;
+}
+
+.img-group{
+    border-radius: 20px;
+}
+
+.grid-img img{
+    transition: 0.5s all ease-in-out;
+}
+
+.grid-img:hover img{
+    transform: scale(1.5);
+}
+
+.footer-copyright{
+    padding-top: 1rem;
+    padding-left: 1rem;
+    border-top: solid 1px rgb(11, 134, 141);
+    text-align: center;
+}

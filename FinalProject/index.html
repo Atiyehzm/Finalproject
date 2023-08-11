@@ -1,4 +1,6 @@
 <!DOCTYPE html>
+<html lang="en">
+  <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
@@ -10,28 +12,22 @@
     <link rel="stylesheet" href="home.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-    <style>
-        
-      </style>
-
-<html lang="en">
-<head>
-
-</head>
+  </head>
+  
 <body>
     <header>
-        <h1 class="topic">Vanilla Kitchen</h1>
+        <h1 id="topic" class="topic">Vanilla Kitchen</h1>
         <section>
             <nav class="menubar">
                 <ul id="site-navigation" class="site-navigation">
                     <li class="home navigation"><a href="index.html">HOME</a></li>
                     <li class="menu navigation"><a href="menu.html">MENU</a></li>
-                    <li class="order navigation"><a href="#order">ORDER NOW</a></li>
-                    <li class="contact navigation"><a href="#contact">CONTACT US</a></li>
-                    <li class="about navigation"><a href="#about">ABOUT US</a></li>
+                    <li class="order navigation"><a href="order.html">ORDER NOW</a></li>
+                    <li class="contact navigation"><a href="contact.html">CONTACT US</a></li>
+                    <li class="about navigation"><a href="about.html">ABOUT US</a></li>
                 </ul>
             </nav> 
         </section>
@@ -50,19 +46,19 @@
               <div class="carousel-item active">
                 <img src="./Assets/Images/IMG_4454.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h2>Welcome to Vanilla Kitchen</h5>
+                  <h2 class="slide">Welcome to Vanilla Kitchen</h5>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./Assets/Images/IMG_0620.HEIC" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h2>Welcome to Vanilla Kitchen</h5>
+                  <h2 class="slide">Welcome to Vanilla Kitchen</h5>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="./Assets/Images/IMG_9242.JPG" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h2>Welcome to Vanilla Kitchen</h5>
+                  <h2 class="slide">Welcome to Vanilla Kitchen</h5>
                 </div>
               </div>
             </div>
@@ -80,55 +76,55 @@
     
     <main>
         <section class="group-section">
-            <article>
+            <article class="grid-img">
                 <img src="./Assets/Images/cake (2).JPG" alt="" class="img-group">
                 <button class="groupbtn">CAKE</button>
             </article>
-            <article>
+            <article class="grid-img">
                 <img src="./Assets/Images/dessert.JPG" alt="" class="img-group">
                 <button class="groupbtn">DESSERT</button>
-
             </article>
-            <article>
+            <article class="grid-img">
                 <img src="./Assets/Images/halwa.JPG" alt="" class="img-group">
                 <button class="groupbtn">HALWA</button>
             </article>
-            <article>
+            <article class="grid-img">
                 <img src="./Assets/Images/cupcake.JPG" alt="" class="img-group">
                 <button class="groupbtn">CUP CAKE</button>
             </article>
         </section>
     </main>
-    <section class="nav-description">
-        <article id="menu">
-            <h2>Menu</h2>
-            <p></p>
-        </article>
-        <article id="order">
-            <h2>Order Now</h2>
-            <p></p>
-        </article>
-        <article id="contact">
-            <h2>Contact Us</h2>
-            <p></p>
-        </article>
-        <article id="about">
-            <h2>About Us</h2>
-            <p></p>
-        </article>
-    </section>
-    <footer>
+
+      <footer>
         <form action="" class="form-footer">
             <fieldset>
                 <h3>Newsletter</h3>
                 <input type="text" id="newsletter" placeholder="Email address">
-                <button>Subscribe</button>
+                <button class="newsbtn">Subscribe</button>
             </fieldset>
         </form>
         <div>
-
+          <form action="">
+               <input type="text" id="massage-me" placeholder="Send Massage">
+          </form>
         </div>
-    </footer>
+
+        <section class="footer-copyright">
+          <p>Copyright &copy; 2023 vanilla Kitchen. All rights reserved.</p>
+        </section>
+
+      </footer>
+
+    
+    <script>
+    const header = document.querySelector('#topic')
+    function changeColor() { 
+      header.classList.toggle('header-color')
+    }
+    header.addEventListener('click', changeColor)
+    </script>
 </body>
 </html>
+
+
 

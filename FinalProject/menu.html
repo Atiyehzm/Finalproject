@@ -2,120 +2,204 @@
 <html lang="en">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Niconne&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Niconne&family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>menu</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
-    <style>
-        body{
-            background-color: rgb(240, 226, 168);
-        }
-        section{
-            padding-left: 2rem;
-        }
-        h2{
-            font-size: 2rem;
-            color: rgb(153, 39, 58);
-        }
-        .first-part{
-            background-color: bisque;
 
-        }
+<style>
         
-        header{
-    background-color: rgb(218, 184, 201);
-}
-.menubar{
-    background-color: rgb(226, 164, 183, .5);
-}
+    body{
+        background-color: rgb(240, 226, 168);
+    }
 
-.site-navigation{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-}
+    h2{
+        font-size: 2rem;
+        color: rgb(153, 39, 58);
+    }
+       
+    .menudescription{
+        padding-left: 6rem;
+        padding-top: 2rem;
+    }
 
-.topic{
-    text-align: center;
-    font-family: 'Niconne', sans-serif;
-    font-size: 5rem;
-    color: rgb(117, 18, 117)
- }
+    header{
+        background-color: rgb(218, 184, 201);
+    }
 
-.navigation {
-    transition: .5s;
-    color: rgb(108, 223, 204);
+    .menubar{
+        background-color: rgb(226, 164, 183, .5);
+    }
 
-}
+    .site-navigation{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        padding-left: 15rem;
+        padding-right: 15rem;
+    }
 
-.navigation:hover {
-    font-size: x-large;
-    color: rgb(230, 20, 125);
-}
+    .topic{
+        text-align: center;
+        font-family: 'Niconne', sans-serif;
+        font-size: 5rem;
+        color: rgb(117, 18, 117)
+    }
 
-    </style>
+    .slide{
+        font-family: 'Niconne', sans-serif;
+        font-size: 5rem;
+        color:rgb(105, 13, 105)
+    }
+
+    .navigation a{
+        transition: .5s;
+        color: rgb(92, 11, 74);
+        text-decoration: none;
+    }
+
+    .navigation:hover {
+        font-size: x-large;
+        color: rgb(230, 20, 125);
+    }
+
+    .menu-button {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-button button {
+        width: 150px;
+        border-radius: 5px;
+        background-color: rgb(231, 145, 185);
+        box-shadow: 0px 20px 50px 0px rgba(45, 26, 46, 0.5);
+        transition: 1s;
+    }
+
+    .menu-button button:hover {
+        width:250px;
+        background-color: antiquewhite;
+    }
+
+    .menubutton {
+        margin-bottom: 1rem;
+    }
+
+    .header-color {
+        background-color: aquamarine;
+    }
+    
+</style>
 </head>
 <body>
     <header>
-        <h1 class="topic">Vanilla Kitchen</h1>
+        <h1 id="topic" class="topic">Vanilla Kitchen</h1>
         <section>
             <nav class="menubar">
                 <ul id="site-navigation" class="site-navigation">
                     <li class="home navigation"><a href="index.html">HOME</a></li>
                     <li class="menu navigation"><a href="menu.html">MENU</a></li>
-                    <li class="order navigation"><a href="#order">ORDER NOW</a></li>
-                    <li class="contact navigation"><a href="#contact">CONTACT US</a></li>
-                    <li class="about navigation"><a href="#about">ABOUT US</a></li>
+                    <li class="order navigation"><a href="order.html">ORDER NOW</a></li>
+                    <li class="contact navigation"><a href="contact.html">CONTACT US</a></li>
+                    <li class="about navigation"><a href="about.html">ABOUT US</a></li>
                 </ul>
             </nav> 
         </section>
     </header>
 
-    <section class="first-part">
+    <section class=menudescription>
         <h2>Menu</h2>
-        <p>All of our cakes are made from scratch with natural and the highest quality ingredients. Our fillings are made of Swiss style buttercream, and they taste so creamy and yummy compare to traditional buttercream.You may mix and match from the list of cake and filling flavors below.</p>
+        <p>All of our product are made from scratch with natural and the highest quality ingredients.
+            <br> 
+            <br></p>
     </section>
-    <section>
-        <h2>Cake Flavor</h2>
-        <ul>
-            <li>Vanilla</li>
-            <li>Red Velvet</li>
-            <li> Coffee & Walnut</li>
-            <li>Pumpkin</li>
-            <li>Rich Chocolate</li>
-            <li>Carrot & Walnut</li>
-            <li>Chocolate & Banana</li>
-            <li>Vegan Vanilla</li>
-            <li>Non-dairy Chocolate</li>
-            <li> Gluten Free (Chocolate)</li>
-        </ul>
+    <section class="menu-button">
+        <div>
+            <button id="cakebtn"  class="cakebtn menubutton">Cake</button>
+            <div id="cake-div">
+                <ul id="cake-ul"></ul>
+            </div>
+        </div>
+            
+        <div>
+            <button id="dessertbtn"  class="dessertbtn menubutton">Dessert</button>
+            <div id="dessert-div">
+                <ul id="dessert-ul"></ul>
+            </div>
+        </div>
+
+        <div>
+            <button id="halwabtn" class="halwabtn menubutton">Halwa</button>
+            <div id="halwa-div">
+                <ul id="halwa-ul"></ul>
+            </div>
+        </div>
+
+        <div>
+            <button id="cupcake"  class="cupcake menubutton">Cup Cake</button>
+            <div id="cupcake-div">
+                <ul id="cupcake-ul"></ul>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2>ButterCream </h2>
-        <ul>
-            <li>Vanilla</li>
-            <li>Chocolate</li>
-            <li>Strawberry</li>
-            <li>Peanut Butter</li>
-            <li>Coffee</li>
-            <li>Cookies & Cream</li>
-            <li>Coconut</li>
-            <li>Cream Cheese</li>
-            <li>Lemon</li>
-            <li>Caramel</li>
-            <li>Mocha</li>
-        </ul>
-    </section>
+
     
+    <script>
+
+        const cakeButton = document.querySelector('#cakebtn')
+        const cakeUl = document.querySelector('#cake-ul')
+                
+        function addCakeMenu() {
+          cakeUl.innerHTML = "<li>Vanilla</li>"+"<li>Rich Chocolate</li>"+"<li>Red Velvet</li>"+"<li>Chocolate & Banana</li>"+"<li>Coffee & Walnut</li>"
+        }
+        cakeButton.addEventListener('click', addCakeMenu)
+
+
+
+        const dessertButton = document.querySelector('#dessertbtn')
+        const dessertUl = document.querySelector('#dessert-ul')
+
+        function addDessertMenu() {
+            dessertUl.innerHTML = "<li>Saffron</li>"+"<li>Vanilla</li>"+"<li>Chocolate</li>"+"<li>Rainbow</li>"+"<li>Cheesecake</li>"
+        }
+        dessertButton.addEventListener('click', addDessertMenu)
+
+
+
+        halwaButton = document.querySelector('#halwabtn')
+        const halwaUl = document.querySelector('#halwa-ul')
+
+        function addHalwaMenu() {
+            halwaUl.innerHTML = "<li>Saffron Halwa</li>"+"<li>Carrot Halwa</li>"+"<li>Pumkin Halwa</li>"+"<li>Arabic Halwa</li>"+"<li>Milk Halwa</li>"
+        }
+        halwaButton.addEventListener('click', addHalwaMenu)
+
+
+
+        cupcakeButton = document.querySelector('#cupcake')
+        const cupcakeUl = document.querySelector('#cupcake-ul')
+
+        function addCupcakeMenu() {
+            cupcakeUl.innerHTML = "<li>Vanilla</li>"+"<li>Chocolate</li>"+"<li>Red Velvet</li>"+"<li>Carrot & Walnut</li>"+"<li>Banana</li>"
+        }
+        cupcakeButton.addEventListener('click', addCupcakeMenu)
+
+
+       
+        const header = document.querySelector('#topic')
+        function changeColor() { 
+        header.classList.toggle('header-color')
+        }
+        header.addEventListener('click', changeColor)
+   
+    </script>
 </body>
 </html>
