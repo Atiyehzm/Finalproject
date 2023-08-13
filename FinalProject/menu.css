@@ -46,8 +46,6 @@ body{
     color: rgb(230, 20, 125);
 }
 
-
-
 h2{
     font-size: 2rem;
     color: rgb(153, 39, 58);
@@ -79,3 +77,44 @@ h2{
 .menubutton{
     margin-bottom: 1rem;
 }
+
+@media (max-width: 390px) {
+    .topic { 
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .menudescription { 
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    h2 { 
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    p { 
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 390px) {    
+    .menu-button { 
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       padding-left: 2rem;
+       padding-right: 1rem;
+    }
+}
+
+@media (max-width: 390px) {    
+    .menu-button button:hover { 
+        width:190px;
+    }
+}
+

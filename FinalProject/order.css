@@ -119,3 +119,28 @@ input {
 .hide{
     display: none;
 }
+
+@media (max-width: 390px) {
+    .topic { 
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .menudescription { 
+        padding-left: 2.5rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 390px) {
+   h2 { 
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .li-order { 
+         font-size: 1rem;
+     }
+ }

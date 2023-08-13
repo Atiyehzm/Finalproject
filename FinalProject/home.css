@@ -161,3 +161,16 @@ header{
     border-top: solid 1px rgb(11, 134, 141);
     text-align: center;
 }
+
+@media (max-width: 390px) {
+    .group-section { 
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 390px) {
+    .topic { 
+        font-size: 3rem;
+    }
+}
