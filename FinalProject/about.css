@@ -1,0 +1,62 @@
+header{
+    background-color: rgb(218, 184, 201);
+}
+
+.header-color {
+    background-color: aquamarine;
+}
+
+.topic{
+    text-align: center;
+    font-family: 'Niconne', sans-serif;
+    font-size: 5rem;
+    color: rgb(117, 18, 117)
+}
+
+body{
+    background-color: rgb(240, 226, 168);
+}
+
+.bg-body-tertiary{
+    padding: 0;
+}
+
+.container-fluid{
+    background-color: rgb(226, 164, 183, .5);
+    --bs-gutter-x:5rem;
+}
+
+.navbar-nav{
+    --bs-navbar-nav-link-padding-x:4rem;
+    --bs-navbar-padding-y:0;
+    --bs-navbar-padding-x:0;
+}
+
+.nav-item{
+    padding: 1rem;
+}
+
+.nav-link{
+    transition: .5s;
+    color: rgb(92, 11, 74);
+}
+
+.nav-link:hover{
+    font-size: x-large;
+    color: rgb(230, 20, 125);
+}
+
+
+
+h2{
+    font-size: 2rem;
+    color: rgb(153, 39, 58);
+}
+
+.menudescription{
+    padding-left: 8rem;
+    padding-top: 2rem;
+}
+
+
+

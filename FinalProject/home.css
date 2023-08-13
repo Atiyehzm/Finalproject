@@ -6,19 +6,6 @@ header{
     background-color: aquamarine;
 }
 
-.menubar{
-    background-color: rgb(226, 164, 183, .5);
-}
-
-.site-navigation{
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-}
-
 .topic{
     text-align: center;
     font-family: 'Niconne', sans-serif;
@@ -26,21 +13,39 @@ header{
     color: rgb(117, 18, 117)
 }
 
+.bg-body-tertiary{
+    padding: 0;
+}
+
+.container-fluid{
+    background-color: rgb(226, 164, 183, .5);
+    --bs-gutter-x:5rem;
+}
+
+.navbar-nav{
+    --bs-navbar-nav-link-padding-x:4rem;
+    --bs-navbar-padding-y:0;
+    --bs-navbar-padding-x:0;
+}
+
+.nav-item{
+    padding: 1rem;
+}
+
+.nav-link{
+    transition: .5s;
+    color: rgb(92, 11, 74);
+}
+
+.nav-link:hover{
+    font-size: x-large;
+    color: rgb(230, 20, 125);
+}
+
 .slide{
     font-family: 'Niconne', sans-serif;
     font-size: 5rem;
     color:rgb(105, 13, 105)
-}
-
-.navigation a{
-    transition: .5s;
-    color: rgb(92, 11, 74);
-    text-decoration: none;
-}
-
-.navigation:hover{
-    font-size: x-large;
-    color: rgb(230, 20, 125);
 }
 
 .d-block{
@@ -89,11 +94,6 @@ header{
 .groupbtn:hover{
     background-color: rgb(223, 84, 153);
     width: 300px;
-}
-
-.nav-description{
-    padding-top: 3rem;
-    padding-left: 2rem;
 }
 
 .form-footer{
