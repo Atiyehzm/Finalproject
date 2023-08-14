@@ -1,0 +1,120 @@
+header{
+    background-color: rgb(218, 184, 201);
+}
+
+.header-color{
+    background-color: aquamarine;
+}
+
+.topic{
+    text-align: center;
+    font-family: 'Niconne', sans-serif;
+    font-size: 5rem;
+    color: rgb(117, 18, 117)
+}
+
+body{
+    background-color: rgb(240, 226, 168);
+}
+
+.bg-body-tertiary{
+    padding: 0;
+}
+
+.container-fluid{
+    background-color: rgb(226, 164, 183, .5);
+    --bs-gutter-x:5rem;
+}
+
+.navbar-nav{
+    --bs-navbar-nav-link-padding-x:4rem;
+    --bs-navbar-padding-y:0;
+    --bs-navbar-padding-x:0;
+}
+
+.nav-item{
+    padding: 1rem;
+}
+
+.nav-link{
+    transition: .5s;
+    color: rgb(92, 11, 74);
+}
+
+.nav-link:hover{
+    font-size: x-large;
+    color: rgb(230, 20, 125);
+}
+
+h2{
+    font-size: 2rem;
+    color: rgb(153, 39, 58);
+}
+   
+.menudescription{
+    padding-left: 6rem;
+    padding-top: 2rem;
+}
+
+.menu-button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-button button{
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(231, 145, 185);
+    box-shadow: 0px 20px 50px 0px rgba(45, 26, 46, 0.5);
+    transition: 1s;
+}
+
+.menu-button button:hover{
+    width:250px;
+    background-color: antiquewhite;
+}
+
+.menubutton{
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 390px) {
+    .topic { 
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 390px) {
+    .menudescription { 
+        padding-left: 2rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    h2 { 
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    p { 
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 390px) {    
+    .menu-button { 
+       display: grid;
+       grid-template-columns: repeat(2,1fr);
+       padding-left: 2rem;
+       padding-right: 1rem;
+    }
+}
+
+@media (max-width: 390px) {    
+    .menu-button button:hover { 
+        width:190px;
+    }
+}
+
